@@ -22,14 +22,14 @@ function init() {
             message: 'Please describe the functionality of your App'
         },{
             type: 'input',
-            name: 'links',
-            message: "Please paste the links to used API's, if none are used leave blank",
+            name: 'credits',
+            message: "Please paste the links to used API's and list any contributers, if none are used, and this is a solo project, leave blank",
         }
         ,{
             type: 'list',
             name: 'license',
             message: 'does this project have a liscense?',
-            choices: ["MIT", "ISC", "MPL_2.0", "Zlib", "Boost_1.0", "Apache_2.0", "EPL_1.0", "OFL_1.1", "BSD 3-Clause License", "None", "GNU GPL v3", "Hippocratic 2.1", "IBM Public License Version 1.0", "The Perl License", "SIL Open Font License 1.1", "The Unlicense", "The Do What the Fuck you want to Public License"],
+            choices: ["MIT", "ISC", "MPL_2.0", "Zlib", "Boost_1.0", "Apache_2.0", "EPL_1.0", "OFL_1.1", "BSD 3-Clause License", "None", "GNU GPL v3", "Hippocratic 2.1", "IBM Public License Version 1.0", "The Perl License", "The Unlicense", "The Do What the Fuck you want to Public License"],
         }
     ]).then(answers => {
         console.log(answers)
