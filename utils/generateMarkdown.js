@@ -78,66 +78,84 @@ if (license == "Apache_2.0") {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
    if (license == "Apache_2.0") {
+
     return `##License 
 
     This repo is licnesed under the Apache 2.0 license. Please click the badge for more info.`
    } else if (license == "Boost_1.0") {
+
     return `## License
 
     This project is licensed under the Boost Software License 1.0. Please click the badge for more info`
    } else if (license == "BSD 3-Clause License") {
+
     return `## License 
 
     this project is licensed under the BSD 3-Clause License. Please click the badge for more info`
    } else if (license == "Eclipse Public License 1.0") {
+
     return `## License
 
     this project is licensed under the Eclipse Public License 1.0. Please click the badge for more info`
    } else if (license == "GNU GPL v3") {
+
     return `## License
 
     This project is licensed under the GNU GPL v3 license. Please click the badge for more info`
    }else if (license == "The Hippocratice License 2.1") {
+
     return `## License
 
     The project is licensed under The Hippocratic License 2.1. Please click the badge for more info`
    } else if (license == "IBM Public License Version 1.0") {
+
     return `## License
 
     This project is licensed under the IBM Public License Version 1.0. Please click the badge for more info`
    } else if (license == "ISC") {
+
     return `## License
 
     This project is licensed under the ISC license. Please click the badge for more info`
    } else if (license == "MIT") {
+
     return `## License
 
     this project is licensed under the MIT license. Please click the badge for more info`
    } else if (license == "Mozilla Public License 2.0") {
+
     return `## License
 
     this project is license under the Mozilla Public License 2.0. Please click the badge for more info`
    } else if (license == "The Perl License") {
+
     return `## License
 
     This project is licensed under The Perl License. Please click the badge for more info`
    } else if (license == "OFL_1.1") {
+
     return `## License
 
     This project is licnesed under the SIL Open Font License 1.1. Please click the badge for more info`
    } else if (license == "The Unlicense") {
+
     return `## License
+
     This repos is license under The Unlicense license. Please click the badge for more info`
    } else if (license == "The Do What the Fuck You Want to Public License") {
+
     return `## License
 
     This project is licnesed under The Do What the Fuck You Want to Public License. Please click the badge for more info`
    }else if (license == "Zlib") {
+
     return `## License
     
     This Project is licensed under the Zlib license. Please click the badge for more info`
    }else if (license == "None") {
+
     return ""
+
    }
 }
 
@@ -145,7 +163,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   console.log(data)
   return `# ${data.projectName}
-  ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}${renderLicenseSection(data.license)}
+  ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
 
   ## Contents
   [Description](#description) | [Installation](#installation) | [Usage](#usage) | [License](#license) | [Credits](#credits) | [Tests](#tests) | [Questions](#questions)
@@ -161,14 +179,13 @@ function generateMarkdown(data) {
   ## Usage
 
   ${data.usage}
-  
+
   ## Credits
 
   ${data.credits}
   
-  ## License
 
-  ${data.license}
+  ${renderLicenseSection(data.license)}
 
 
   ## Tests
@@ -178,7 +195,7 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  If you have any questions please contact me at [Email]${data.email} or [GitHub]${data.github} `;
+  If you have any questions please contact me at Email: ${data.email} or GitHub: ${data.github} `;
 }
 
 module.exports = generateMarkdown;
