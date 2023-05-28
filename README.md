@@ -1,4 +1,4 @@
-# README Generator
+# SVG logo Generator
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)https://opensource.org/licenses/MIT
 
   ## Contents
@@ -6,15 +6,15 @@
 
   ## Description
 
-  This app will create a README file for you after answering the prompts, saving time in the development process
+  This app will create an SVG logo for you using simple steps
 
   ## Installation
 
-  Go to my Git Hub and click on the README-Generator repo. Click the "<> Code" button and then click "download ZIP"
+  Go to the associated repo on git hub and click the "<code>" button, then click "download zip"
 
   ## Usage
 
-  After installation run the command and answer the prompts
+  
 
   ## Credits
 
@@ -29,7 +29,7 @@
   ## Tests
 
   the test command(s) are
-  Node index
+  
 
   ## Questions
 
